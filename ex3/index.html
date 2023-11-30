@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila de Impressão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Fila de Impressão</h1>
+
+    <div>
+        <label for="fileName">Nome do Arquivo:</label>
+        <input type="text" id="fileName" />
+        <button onclick="enqueue()">Adicionar à Fila</button>
+    </div>
+
+
+    <div>
+        <h2>Fila de Impressão:</h2>
+        <ul id="printQueue"></ul>
+    </div>
+    <div>
+        <button onclick="printFile()">Imprimir</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
